@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table t</title>
+</head>
+<style>
+    table, th {
+        border: 2px solid black;
+    }
+    p{
+        line-height:60%;
+    }
+</style>
+<body>
+<table width="90%">
+    <thead>git
+      <tr>
+          <th colspan="4" style="background: blue">
+             <h1>MY FIRST TABLE</h1>
+          </th>
+      </tr>
+    </thead>
+      <tr>
+          <td style="background: blue">
+              <h2>First cell</h2>
+          </td>
+          <td style="background: blue">
+              <h2>Second cell</h2>
+          </td>
+          <td rowspan="3" style="background: yellow">
+              <h2>6 sells merged together</h2>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"style="background: yellow">
+              <h2>2 cell merged into one</h2>
+          </td>
+      </tr>
+      <tr>
+          <td style="background: yellow">
+           <p><h2>1st cell<br>3rd row</h2>
+           </p>
+          </td>
+          <td style="background: yellow">
+             <p>
+              <h2>2nd cell<br>3rd row</h2>
+              </p>
+          </td>
+      </tr>
+    <tfoot>
+      <tr>
+          <td colspan="4" style="background: yellow">
+              <h2>Do you like table ?</h2>
+          </td>
+      </tr>
+    </tfoot>
+</table>
+</body>
+</html>
