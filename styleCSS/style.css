@@ -1,0 +1,27 @@
+@font-face {
+font-family:"Dancing Script" ;
+    src: url("../fontsCSS/Dancing_Script/DancingScript-VariableFont_wght.ttf"),
+         url("../fontsCSS/Dancing_Script/DancingScript-VariableFont_wght.eot"),
+         url("../fontsCSS/Dancing_Script/DancingScript-VariableFont_wght.eot?wiefix"),
+         url("../fontsCSS/Dancing_Script/DancingScript-VariableFont_wght.woff2"),
+         url("../fontsCSS/Dancing_Script/DancingScript-VariableFont_wght.woff") ;
+}
+body h1{
+    font-size: 48px;
+    color: aqua;
+    font-family: Montserrat;
+}
+body h2 {
+    font-size: 36px;
+    color: blueviolet;
+    font-family: Fuzzy Bubbles;
+}
+h3 {
+    font-family:Dancing Script;
+    font-size: 46px;
+    font-weight: 200;
+}
+p{
+    font-family: Arial ;
+    font-size: 20px;
+}
