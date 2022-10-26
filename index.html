@@ -1,60 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Table t</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INDEX</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleCSS/normalize.css">
+    <link rel="stylesheet" href="styleCSS/style1.css">
 </head>
-<style>
-    table, th {
-        border: 2px solid black;
-    }
-    p{
-        line-height:60%;
-    }
-</style>
 <body>
-<table width="90%">
-    <thead>git
-      <tr>
-          <th colspan="4" style="background: blue">
-             <h1>MY FIRST TABLE</h1>
-          </th>
-      </tr>
-    </thead>
-      <tr>
-          <td style="background: blue">
-              <h2>First cell</h2>
-          </td>
-          <td style="background: blue">
-              <h2>Second cell</h2>
-          </td>
-          <td rowspan="3" style="background: yellow">
-              <h2>6 sells merged together</h2>
-          </td>
-      </tr>
-      <tr>
-          <td colspan="2"style="background: yellow">
-              <h2>2 cell merged into one</h2>
-          </td>
-      </tr>
-      <tr>
-          <td style="background: yellow">
-           <p><h2>1st cell<br>3rd row</h2>
-           </p>
-          </td>
-          <td style="background: yellow">
-             <p>
-              <h2>2nd cell<br>3rd row</h2>
-              </p>
-          </td>
-      </tr>
-    <tfoot>
-      <tr>
-          <td colspan="4" style="background: yellow">
-              <h2>Do you like table ?</h2>
-          </td>
-      </tr>
-    </tfoot>
-</table>
+<nav class="nav center">
+    <!--        <div class="container">-->
+    <ul class="nav_list">
+        <li><a class="nav_links nav_links--active " href="#">
+            Homepage
+        </a></li>
+        <li><a class="nav_links" href="#">
+            About author
+        </a></li>
+        <li><a  class="nav_links" href="#">
+            Works
+        </a></li>
+        <li><a  class="nav_links" href="#">
+            Process
+        </a></li>
+        <li><a  class="nav_links" href="#">
+            Contacts
+        </a></li>
+    </ul>
+    <!--        </div>-->
+</nav>
+<main>
+    <section class="offer center">
+        <h1 class="offer_title">
+            Design and layout
+        </h1>
+        <p class="offer_desc">
+            Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century.
+        </p>
+        <a href="#" class="button">
+            WRITE ME
+        </a>
+    </section>
+    <section class="video center">
+        <div class="video_wrap">
+            <img src="img/video-cover.jpg" alt="video cover">
+
+            <button class="video_play video_play--active">
+                <img src="img/play_icon.svg" alt="play">
+            </button>
+            <button class="video_play">
+                <img src="img/play_icon.svg" alt="play">
+            </button>
+        </div>
+    </section>
+</main>
+
 </body>
 </html>
