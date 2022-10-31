@@ -1,47 +1,44 @@
+/*************** Резервное подключение стилей ************
 @font-face {
-    font-family:"Roboto" ;
-    src: url("../fontsCSS/Roboto/Roboto-Regular.ttf"),
-    url("../fontsCSS/Roboto/Roboto-Bold.ttf"),
-    url("../fontsCSS/Roboto/Roboto-Medium.ttf"),
-    url("../fontsCSS/Roboto/Roboto-Black.ttf"),
-    url("../fontsCSS/Roboto/Roboto-Thin.ttf"),
-    url("../fontsCSS/Roboto/Roboto-Light.ttf");
+    font-family: "Roboto" ;
+    font-weight: 400;
+    src: url("../fontsCSS/Roboto/Roboto-Regular.ttf");
 }
+@font-face {
+    font-family: "Roboto" ;
+    font-weight: 700;
+    url("../fontsCSS/Roboto/Roboto-Bold.ttf");
+}    */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
 }
 main{
-    display: inline-block;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-div.clear{
-    clear: both;
-}
-section.box1{
+.box{
     width:200px ;
     height:226px ;
     margin-top: 30px;
-    margin-left:calc(50vw - 330px);
     background-color: #d0d0d0;
     float: left;
+    text-align: center;
+ /*   word-wrap: break-word;
+    overflow-x: hidden; */
+}
+section.box1{
+    margin-left:calc(50vw - 330px);
 }
 section.box2{
-    width:200px ;
-    height:226px ;
-    margin-top:30px;
     margin-left:30px ;
-    background-color: #d0d0d0;
-    float:left;
 }
 section.box3{
-    width: 200px;
-    height: 226px;
-    margin-top:30px;
     margin-left: 30px;
-    background-color: #d0d0d0;
-    float: left;
 }
 header.back{
     width: 130px;
@@ -62,36 +59,28 @@ header.background img{
     padding: 45px 35px;
 }
 article h1{
+    overflow-x: hidden; /****** Ограничиваем выход текста **/
     width: 200px;
     height: 22px;
     font-size:18px ;
     font-weight:700 ;
-    font-style: normal;
     line-height: 22px;
     margin-bottom: 10px;
-    text-align: center ;
     color: #000000;
+}
+p{
+    overflow: hidden; /***** Второй вариант ограничения **/
 }
 div p{
     width: 200px;
     height: 36px;
-    font-size:14px ;
-    font-weight:400 ;
-    font-style: normal;
-    line-height: 18px;
     margin-bottom: 18px;
-    text-align: center ;
     color: #000000;
 }
 header p{
     position: absolute;
     width: 39px;
     height: 18px;
-    font-size: 14px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
     color: #ffffff;
     padding: 42px 45px 56px 46px;
 }
@@ -99,11 +88,6 @@ header p:hover{
     position: absolute;
     width: 39px;
     height: 18px;
-    font-size: 14px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
     color: blue;
     padding: 42px 45px 56px 46px;
 }
@@ -126,10 +110,5 @@ header.before p:before{
     content:"image";
     color: #fff;
     position: absolute;
-    font-size: 14px;
-    align-content: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
    margin-left: -19.5px;
 }
