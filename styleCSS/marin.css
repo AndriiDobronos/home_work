@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, h6{
     text-decoration: none;
     border-radius: 10px;
 }
+.on_white:hover {
+    color: #2d5e5e;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -193,7 +196,7 @@ div.photo {
     margin-top: 60px;
     margin-bottom: 90px;
 }
-.button_set {
+.placeholder_set {
     height: 180px;
     width: 774px;
     display: flex;
@@ -205,7 +208,6 @@ div.photo {
     font-weight: 400;
     line-height: 24px;
     color: #000;
-    border: 1px solid red;
 }
 .left_set {
     width: 372px;
@@ -249,36 +251,65 @@ textarea {
     border-radius: 10px;
 }
 .check {
-    border: 1px solid #000;
+    display: flex;
     width:327px ;
     height: 30px;
     margin-left: calc(50vw - 164px);
+    margin-bottom: 48px;
 }
-input[type="checkbox"]{
+input[type=checkbox]{
+    display: none;
     margin-top:7.5px;
     height: 15px;
     width: 15px;
     border: 1px solid #2d5e5e;
-    margin-left: -143px;
-    margin-right: 0px;
+    margin-right: 15px;
     background: #2d5e5e ;
 }
-input[type="checkbox"]::before{
-    content:"";
+input[type=checkbox] + label:before{
+    display: inline-block;
+    content:"\2714";
+    width:15px;
+    height:15px;
+    margin-right: 15px;
+    border: 1px solid #2d5e5e;
+    vertical-align: middle;
+    text-align: center ;
+    transition: color ease 0.5s;
+    color: transparent;
+    z-index: 5;
+}
+input[type=checkbox] + label:after {
+    display: inline-block;
+    content:"\2714";
     width:11px;
     height:11px;
-    background-color:#2d5e5e;
+    margin-right: 15px;
+    border: 3px solid #fff;
+    background-color: #2d5e5e;
+    vertical-align: middle;
+    text-align: center ;
+    transition: color ease 0.5s;
+    color: transparent;
+    z-index: 1;
+}
+input[type=checkbox]:checked  + label:before {
+    background-color: #2d5e5e;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
 }
 label.confirm  {
-    width: 297px;
+    display: block;
     height: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 30px;
     color: #2d5e5e;
-    margin-left: -23px ;
-    padding-top: 9px;
-    border: 1px solid #000;
+}
+.place{
+    margin-left: calc(50vw - 125px);
+    margin-right: calc(50vw - 125px);
 }
 
