@@ -1,0 +1,513 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Graphik LC TT" ;
+    font-weight: 400;
+    src: url("../fontsCSS/Graphik_LC/Graphik-Regular.eot"),
+         url("../fontsCSS/Graphik_LC/Graphik-Regular.woff2"),
+         url("../fontsCSS/Graphik_LC/Graphik-Regular.woff"),
+         url("../fontsCSS/Graphik_LC/Graphik-Regular.ttf");
+}
+@font-face {
+    font-family: " Graphik LC TT" ;
+    font-weight: 600;
+    src: url("../fontsCSS/Graphik_LC/Graphik-Semibold.ttf"),
+         url("../fontsCSS/Graphik_LC/Graphik-Semibold.woff"),
+         url("../fontsCSS/Graphik_LC/Graphik-Semibold.eot"),
+         url("../fontsCSS/Graphik_LC/Graphik-Semibold.woff2");
+}
+body {
+    font-family: "Graphik LC TT",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000;
+}
+a {
+    text-decoration: none ;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight:600 ;
+}
+li {
+    list-style: none ;
+    color: #000;
+}
+.button {
+    width: 120px;
+    height: 45px;
+    text-align: center ;
+    align-items: center;
+}
+.button_preview {
+    display: flex;
+    width: 160px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.center {
+    padding-left: calc(50vw - 669px);
+    padding-right: calc(50vw - 669px);
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    background: #fff;
+    padding-top: 31px;
+    padding-bottom: 24px;
+}
+.header__line {
+    display: flex;
+    align-items: center;
+    width:1338px ;
+}
+.header__logo {
+    height: 28px;
+}
+.header__nav {
+    margin-left: 51px;
+    margin-right: auto;
+}
+.nav__ul {
+    display: inline-flex;
+    align-items: center;
+    width: 550px;
+    justify-content: space-between;
+}
+.nav__li_product {
+    display: block;
+}
+.nav__li_feature {
+    display: block;
+}
+.nav__li_pricing{
+    display: block;
+}
+.nav__li_case {
+    display: block;
+}
+.nav__li_resources {
+    display: block;
+}
+.header__button-set {
+    display: inline-flex;
+}
+.button-login {
+    border: 1px solid rgba(0,0,0,0.5);
+    margin-right: 10px;
+}
+.button-try {
+    background: #ff6336;
+}
+.refer_white {
+    color: #fff;
+}
+/****************** Preview ***********/
+.preview  {
+    display: flex;
+    margin:0 16px 0 24px;
+    padding-top: 129px;
+    padding-bottom: 172px;
+}
+.preview__background {
+    background-image: url("../imgLokalise/preview-background.png");
+    background-color: transparent;
+    height:529px;
+    width:759px;
+    margin-top:22px;
+    margin-left: -29px;
+    background-repeat: no-repeat ;
+}
+.preview__left-side  {
+    display: flex;
+    flex-direction: column;
+}
+.preview__title {
+    display: block;
+    width: 552px;
+    height: 210px;
+    font-size: 65px;
+    line-height: 70px;
+    margin-top: 0;
+    margin-bottom: 51px;
+}
+.preview__description {
+    width: 471px;
+    height: 140px;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom:51px ;
+}
+.preview__text_description {
+    margin: 0;
+}
+.preview__button-set {
+    display:inline-flex ;
+    margin-bottom: 25px;
+}
+.button-set__refer {
+    background: #ff6336;
+    margin-right: 10px;
+}
+.button-set__refer_demo {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.5) ;
+}
+.preview__text_under-button{
+    display: block;
+    line-height:25px;
+    margin: 0;
+}
+/***************** Preferred  *************/
+.preferred {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    height: 455px;
+    background: rgba(255, 156, 125, 1);
+}
+.preferred__title {
+    display: block;
+    width: 720px;
+    height: 120px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 110px;
+    margin: 108px auto;
+}
+.preferred__trademarks {
+    display: flex;
+    justify-content: space-around;
+}
+.trademarks__img {
+    display: block;
+}
+/**************** Advantages *******************/
+.advantages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 75px;
+    padding-top: 241px;
+    gap: 30px;
+}
+.process {
+    height: 882px;
+}
+.market{
+    height: 882px;
+}
+.quality {
+    height: 882px;
+}
+.less-work {
+    height: 817px;
+}
+.advantages__title {
+    display: block;
+    width: 493px;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 auto 0 0;
+}
+.refer_text {
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 400;
+    line-height:30px ;
+}
+.advantages__text {
+    display: block;
+    width: 485px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto 0 0;
+}
+.advantages__refer {
+    display: block;
+    height: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 0 auto 0 0;
+}
+.advantages__img {
+    display: block;
+    width: 632px;
+    height: 632px;
+}
+.advantages__img_last {
+    display: block;
+    width: 632px;
+    height: 577px;
+}
+.img_right  {
+    margin: -151px 75px 160px auto;
+}
+.img_left {
+    margin: -151px auto 160px 0;
+}
+/************************* What can **********************/
+.what-can {
+    display: flex;
+    flex-direction: column;
+    height: 1033px;
+    background:rgba(255, 248, 228, 1);
+}
+.what-can_title {
+    display: block;
+    text-align: center ;
+    margin:120px auto 79px auto;
+    font-size: 50px;
+    line-height: 60px;
+}
+.what-can__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 75px;
+}
+.property-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:310px ;
+}
+.what-can_picture {
+    display: block;
+    width: 160px;
+    height: 120px;
+    margin-bottom: 23px;
+}
+.what-can_name-apps {
+    display: block;
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+.what-can_text {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*********************** Boost team ****************/
+.boost-team {
+    display: flex;
+    flex-direction: column;
+    padding-top: 154px;
+    padding-left: calc(50vw - 645px);
+    padding-right: calc(50vw - 642px);
+    height: 1128px;
+}
+.boost-team_title {
+    text-align: center ;
+    font-size:50px ;
+    line-height: 60px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 75px;
+}
+.boost-team__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.boost-team__set {
+    display: flex;
+    flex-direction: column;
+    max-width: 409px;
+}
+.boost-team__set_picture {
+    display: block;
+    max-width: 179px;
+    max-height: 201px;
+}
+.img_displacement {
+    padding-top: 18px;
+}
+.boost-team__set_name {
+    font-size: 30px;
+    line-height: 40px;
+    position: absolute;
+    margin-top: 250px;
+}
+.boost-team__set_text {
+    position: relative;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 123px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.text_displacement {
+    padding-top: 140px;
+}
+.boost-team__set_refer {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 0;
+    margin-top: 0;
+    text-decoration: underline;
+}
+/*******************  Revolut  ********************/
+.revolut {
+    display: inline-flex;
+    height: 468px;
+    background:rgba(201, 232, 242, 1);
+    padding-top: 63px;
+    padding-left: calc(50vw - 645px);
+    padding-right: calc(50vw - 642px);
+}
+.description__text {
+    font-size: 30px;
+    line-height: 40px;
+    width: 63%;
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+.description__text_chief {
+    margin-top: 0;
+    margin-bottom: 7px;
+    padding: 0;
+}
+.description__img {
+    height: 25px;
+}
+.img_chief {
+    width: 310px;
+    height: 310px;
+    margin-top: -10px;
+}
+/***************************  Management  *****************/
+.management {
+    display: flex;
+    height: 332px;
+    background: rgba(218, 188, 152, 1);
+    padding-left: calc(50vw - 666px);
+    padding-right: calc(50vw - 582px);
+    padding-top: 90px;
+}
+.management__img_cake {
+    width: 176px;
+    height: 154px;
+    margin-right: 67px;
+}
+.management__title {
+    font-size: 35px;
+    line-height: 50px;
+    width: 461px;
+    margin-right: 0;
+}
+.management__img_line {
+    margin-left:124px ;
+    margin-top:-10px;
+    height: 168px;
+}
+.management__box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 127px;
+    margin-left: 71px;
+}
+.management__img_G2 {
+    margin-bottom: 20px;
+}
+.management__text{
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.management__img_Capterra {
+    margin-bottom: 20px;
+}
+/********************  Integrate  ***********************/
+.integrate {
+    display: flex;
+    flex-direction: column;
+    height: 1099px;
+    padding-top: 165px;
+    align-items: center;
+}
+.integrate__title {
+    font-size: 65px;
+    line-height: 75px;
+    text-align: center;
+    width: 791px;
+    margin: 0;
+}
+.integrate__text {
+    font-size: 25px;
+    line-height: 30px;
+    width: 539px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.integrate__img {
+    width: 1023px;
+    height: 445px;
+    margin-bottom: 32px;
+}
+.integrate__button {
+    width: 193px;
+    height: 60px;
+    text-align: center ;
+    line-height: 60px;
+    background: rgba(255, 99, 54, 1);
+}
+a.button_bottom {
+    color: #fff;
+}
+/*********************  Made-easy   ******************/
+.made-easy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 603px;
+    background: rgba(255, 156, 125, 1);
+    padding-top: 119px;
+}
+.made-easy__title {
+    text-align: center;
+    font-size: 65px;
+    line-height: 75px;
+    width: 784px;
+    margin-bottom: 29px;
+}
+.made-easy__text {
+    width: 438px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom:54px ;
+}
+.made-easy__button {
+    width: 160px;
+    height: 60px;
+    text-align: center ;
+    font-size: 17px;
+    line-height: 60px;
+    background: rgba(0,0,0, 1);
+}
+.button_black {
+    color: #fff;
+}
+/******************** Footer  ***********************/
+.footer {
+    height: 900px;
+    background: rgba(238, 238, 238, 1);
+}

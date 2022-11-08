@@ -37,10 +37,10 @@
    </header>
    <main>
      <section class="offer center">
-         <h1 class="offer_title">
+         <h1 class="offer__title">
              Ваш личный психолог в Кривом Роге
          </h1>
-         <p class="offer_desc">
+         <p class="offer__desc">
              Личные, семейные и групповые консультации
          </p>
          <a href="#" class="button">
@@ -48,65 +48,66 @@
          </a>
      </section>
 
-     <section class="services">
-         <div class="service">
-         <img src="imgMarin/Vector.png" alt="logo">
-         <h3>
+     <section class="services" id="services">
+         <div class="services__item">
+         <img class="services__icon" src="imgMarin/Vector.png" alt="logo">
+         <h3 class="services__title">
              Личные консультации
          </h3>
-         <p>Достижения поставленных целей
+         <p class="services__desc">Достижения поставленных целей
              бывает сложной задачей, но при правильной поддержке нет ничего не возможного
          </p>
         </div>
-        <div class="service">
-         <img src="imgMarin/XMLID_173.png" alt="logo">
-         <h3>
+        <div class="services__item">
+         <img class="services__icon" src="imgMarin/XMLID_173.png" alt="logo">
+         <h3 class="services__title">
              Семейная терапия
          </h3>
-         <p>У любой семьи бывают кризисные ситуации, поэтому в такие моменты важно поддерживать друг друга
+         <p class="services__desc">У любой семьи бывают кризисные ситуации, поэтому в такие моменты важно поддерживать друг друга
          </p>
         </div>
-        <div class="service">
-         <img src="imgMarin/network.png" alt="network">
-         <h3>
+        <div class="services__item">
+         <img class="services__icon"  src="imgMarin/network.png" alt="network">
+         <h3 class="services__title">
              Сенситивные группы
          </h3>
-         <p>Групповые занятия — отличное место, чтобы научиться общаться с окружающими людьми и раскрыть свой потенциал
+         <p class="services__desc">Групповые занятия — отличное место, чтобы научиться общаться с окружающими людьми и раскрыть свой потенциал
          </p>
         </div>
      </section>
 
      <section class="aboutMe">
-        <div class="preview">
-         <h2>
+        <div class="aboutMe__preview">
+         <h2 class="aboutMe__preview__title">
              Немного обо мне
          </h2>
-         <p>
+         <p class="aboutMe__preview__desc">
              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
          </p>
-           <div class="set">
-            <div class="button1">
+           <div class="aboutMe__button-set">
+            <div class="aboutMe__button-set__button">
                 <a href="#" class="button">
                     Задать вопрос
                 </a>
             </div>
-            <div class="button2">
+            <div class="aboutMe__button-set__button">
                 <a href="#" class="button">
                    Хочу консультацию
                 </a>
             </div>
            </div>
         </div>
-        <div class="photo">
+        <div class="aboutMe__photo">
             <img src="imgMarin/about_photo.png" alt="aboutMe">
         </div>
      </section>
 
-     <section class="input">
-         <h1>
+     <section class="appointment " id="input">
+         <h1 class="appointment__title">
              Записаться на прием
          </h1>
-         <div class="placeholder_set">
+         <form action="form">
+         <fieldset class="form__fieldset">
              <div class="left_set">
                  <input type="text" placeholder="Ваше имя *" value="Ваше имя *">
                  <input type="text" placeholder="Ваш телефон *" value="Ваш телефон *">
@@ -125,15 +126,16 @@
                  <textarea name="Пожелания" id="" col="" rows="">Пожелания
                  </textarea>
              </div>
-         </div>
+         </fieldset>
          <div class="check">
-             <input type="checkbox" name="checkbox" id="check"/>
-             <label class="confirm" for="check">Я согласен с политикой конфиденциальности
+             <input type="checkbox" class="form__checkbox" id="checkbox" checked/>
+             <label class="form__checkbox_label" for="checkbox">Я согласен с политикой конфиденциальности
              </label>
          </div>
          <a href="#" class="button on_white place">
              Отправить
          </a>
+         </form>
      </section>
    </main>
 </body>

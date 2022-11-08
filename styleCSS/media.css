@@ -1,0 +1,7 @@
+@media(max-width:1000px ) {
+    p{
+        font-size: 36px;
+        max-width: 350px;
+        color: red;
+    }
+}
